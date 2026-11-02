@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 15px;
+  background: #1f2937;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  color: #60a5fa;
+  margin: 5px;
+}
+
+header p {
+  color: #d1d5db;
+}
+
+.upload {
+  display: inline-block;
+  background: #2563eb;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.upload input {
+  display: none;
+}
+
+.gallery {
+  overflow-y: auto;
+  width: 100%;
+  padding: 8px;
+}
+
+.photo {
+  background: #374151;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.photo img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.photo span {
+  display: block;
+  font-size: 11px;
+  padding: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.viewer {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  padding: 15px;
+}
+
+.viewer img {
+  max-width: 75%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.viewer button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
